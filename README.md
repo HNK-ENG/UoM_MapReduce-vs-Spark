@@ -44,3 +44,31 @@ Start loading data into the EMR cluster and process using Hadoop MapReduce.
 - Run HiveQL queries to analyze and process the data in our table. For example, calculating average carrier delay.
 
 ![HiveQL Query Example](<images/hadoop-query.PNG>)
+
+
+## 5. Assignment Results
+### Query Execution Time Comparison (Running Time vs Iteration)
+
+Run the query using Hadoop and Spark for 5 times and plot the graph comparing both methods.
+
+#### 1. Year Wise Carrier Delay from 2003-2010
+![Carrier Delay](<images/comparison_plot_average carrier delay.png>)
+
+#### 2. Year Wise NAS Delay from 2003-2010
+![NAS Delay](<images/comparison_plot_average nas delay.png>)
+
+#### 3. Year Wise Weather Delay from 2003-2010
+![Weather Delay](<images/comparison_plot_average weather delay.png>)
+
+#### 4. Year Wise Late Aircraft Delay from 2003-2010
+![Late Aircraft Delay](<images/comparison_plot_average late aircraft delay.png>)
+
+#### 5. Year Wise Security Delay from 2003-2010
+![Security Delay](<images/comparison_plot_average security delay.png>)
+
+### Average Execution Time Comparison
+
+Calculate the average time taken by MapReduce and Spark for each query and plot the graph.
+
+![Average Execution Time](<images/total average time and delays.png>)
+
