@@ -16,8 +16,8 @@ Create an S3 bucket with the following file structure:
 - Enable SSH connection for the Master Node by adding a new rule for SSH, with the Type set to “SSH” and Source to “My-IP”.
 - Remotely connect to the cluster using Putty.
 
-![EMR Cluster](<images\emr-cluster.png>)
-![Remotely Connect to the Cluster](<images\remotely connect ssh.PNG>)
+![EMR Cluster](<images/emr-cluster.png>)
+![Remotely Connect to the Cluster](<images/remotely connect ssh.PNG>)
 
 ## 3. Process Data using Apache Spark
 
@@ -25,28 +25,22 @@ After configuring the EMR cluster, load data into it and process using Apache Sp
 - Transform and analyze data using the Spark framework.
 - Access the Spark framework by entering the `spark-shell` command.
 
-![Open Spark Shell](<link to png of opening spark-shell>)
+![Open Spark Shell](<images/spark-login.PNG>)
 
 - Load the data from the CSV into HDFS, partition the data for parallel processing based on the column `c1` or the year column, and store that partitioned data in the chosen S3 bucket location.
-
-![Partition Data](<link to pngs for that>)
-
 - View the partitioned data.
 
-![View Data](<link to png for that>)
-![S3 Bucket Partitions](<link to s3 bucket partitions as well>)
+![View Data](<images/partition_by_year_c1.PNG>)
+![S3 Bucket Partitions](<images/partition_by_year_s3.png>)
 
 - Apply SQL queries to the data. Run the command shown below and see the output with query processing time. For example, calculating the average carrier delay.
 
-![SQL Query Example](<link to png of one example>)
+![SQL Query Example](<images/spark-query.PNG>)
 
 ## 4. Process Data using Hadoop MapReduce
 
 Start loading data into the EMR cluster and process using Hadoop MapReduce.
 - Run the command `hive` as shown below and create a Hive table that points to the S3 location of your data.
-
-![Hive Command](<link to png of that>)
-
 - Run HiveQL queries to analyze and process the data in our table. For example, calculating average carrier delay.
 
-![HiveQL Query Example](<link to png of that>)
+![HiveQL Query Example](<images/hadoop-query.PNG>)
