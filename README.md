@@ -6,7 +6,7 @@ The basics of big data processing using MapReduce and Apache Spark, two popular 
 
 Create an S3 bucket with the following file structure:
 
-![S3 Bucket](<images\s3-bucket.png>)
+![S3 Bucket](<images/s3-bucket.png>)
 
 ## 2. Create EMR Cluster
 
